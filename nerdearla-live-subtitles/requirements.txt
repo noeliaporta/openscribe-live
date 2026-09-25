@@ -1,0 +1,18 @@
+# Servidor web y tiempo real
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+websockets==13.1
+pydantic==2.10.3
+
+# Transcripción local (backend por defecto)
+faster-whisper==1.1.0
+numpy==2.1.3
+
+# Traducción local (backend por defecto)
+argostranslate==1.9.6
+
+# Backends por API de Google (opcionales: TRANSCRIBE_BACKEND/TRANSLATE_BACKEND=gemini o PIPELINE=gemini_av)
+google-genai==0.3.0
+
+# Carga automatica del archivo .env
+python-dotenv==1.0.1

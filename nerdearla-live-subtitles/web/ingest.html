@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nerdearla · Captura de audio (escenario)</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; font-family:system-ui,sans-serif; background:#0d1117; color:#e6edf3; }
+  main { max-width:620px; margin:0 auto; padding:32px 20px; }
+  h1 { font-size:20px; }
+  label { display:block; margin:14px 0 4px; color:#8b949e; font-size:14px; }
+  input, button { font-size:15px; border-radius:8px; }
+  input { width:100%; padding:9px 10px; background:#161b22; color:#e6edf3;
+          border:1px solid #30363d; }
+  button { margin-top:18px; padding:11px 18px; border:none; cursor:pointer;
+           background:#238636; color:#fff; font-weight:600; }
+  button.stop { background:#da3633; }
+  #log { margin-top:18px; font-size:13px; color:#8b949e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🎤 Captura de audio del escenario</h1>
+  <p>Enviá el audio del micrófono a una sesión. Abrí una pestaña por escenario.</p>
+  <label for="sid">ID de sesión (ej: escenario-1)</label>
+  <input id="sid" value="escenario-1" />
+  <label for="name">Nombre visible</label>
+  <input id="name" value="Escenario 1" />
+  <button id="btn">Iniciar captura</button>
+  <div id="log"></div>
+</main>
+<script src="/static/ingest.js"></script>
+</body>
+</html>
